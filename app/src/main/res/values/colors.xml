@@ -3,8 +3,8 @@
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FFFFFF</color>
-    <color name="main">#f76971</color>
-    <color name="mainB">#FA4D56</color>
+    <color name="main">#1C2E46</color>
+    <color name="mainB">#1C2E46</color>
     <color name="blue">#08B1E4</color>
     <color name="blueN">#77BCE6</color>
     <color name="blueB">#001E32</color>
@@ -26,7 +26,6 @@
     <color name="background_layout">#FAFAFA</color>
     <color name="orange">#E8281A</color>
     <color name="orange50">#f76971</color>
-    <color name="green">#44D54F</color>
 
 
     <color name="placeholder_bg">#DADADA</color>
@@ -40,4 +39,14 @@
     <color name="startcolortoolbar">#3FAADD</color>
     <color name="endcolortoolbar">#43A047</color>
 
+
+    <color name="primary">#1C2E46</color>
+    <color name="primary_dark">#142232</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="inout_background">#ECECEC</color>
+    <color name="icon_background">#20FFFFFF</color>
+    <color name="error">#B00020</color>
+    <color name="received_message_background">#090D16</color>
+    <color name="green">#008000</color>
 </resources>

@@ -174,57 +174,69 @@
             </LinearLayout>
 
             <RelativeLayout
-                android:layout_below="@id/nameTv"
+                android:visibility="gone"
                 android:id="@+id/realativeVietBai"
-                android:layout_margin="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTv"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
                 <TextView
                     android:id="@+id/vietBaiTv"
-                    android:text="@string/write_post"
-                    android:textSize="16dp"
-                    android:layout_marginBottom="10dp"
-                    android:textColor="@color/blackNhat2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/write_post"
+                    android:textColor="@color/blackNhat2"
+                    android:textSize="16dp" />
+
                 <RelativeLayout
                     android:id="@+id/relativepost"
-                    android:layout_below="@+id/vietBaiTv"
-                    android:gravity="center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vietBaiTv"
+                    android:gravity="center_vertical">
+
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/avatarPostIv"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="5dp"
                         android:src="@drawable/avatar_default" />
+
                     <TextView
-                        android:textSize="12dp"
-                        android:fontFamily="@font/mo_me"
-                        android:textColor="@color/greynhat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@id/avatarPostIv"
+                        android:fontFamily="@font/mo_me"
                         android:text="@string/what_are_you_thinking"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:textColor="@color/greynhat"
+                        android:textSize="12dp" />
+
                     <ImageView
-                        android:src="@drawable/ic_gallery"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="5dp"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"/>
+                        android:src="@drawable/ic_gallery" />
                 </RelativeLayout>
+
                 <View
-                    android:layout_below="@+id/relativepost"
                     android:layout_width="match_parent"
-                    android:background="@color/greynhat3"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/relativepost"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_height="1dp"/>
+                    android:layout_marginRight="5dp"
+                    android:background="@color/greynhat3" />
             </RelativeLayout>
             <TextView
                 android:id="@+id/noPostTv"
@@ -238,6 +250,7 @@
                 android:textSize="18dp"
                 android:visibility="gone" />
             <LinearLayout
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@id/noPostTv">

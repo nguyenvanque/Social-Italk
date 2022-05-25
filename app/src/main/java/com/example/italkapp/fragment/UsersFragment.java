@@ -23,6 +23,7 @@ import android.widget.Toast;
 import com.example.italkapp.ListBlockActivity;
 import com.example.italkapp.MainActivity;
 import com.example.italkapp.R;
+import com.example.italkapp.SearchActivity;
 import com.example.italkapp.adapter.AdapterBlock;
 import com.example.italkapp.adapter.AdapterUser;
 import com.example.italkapp.model.ModelUser;
@@ -43,7 +44,7 @@ public class UsersFragment extends Fragment {
 View view;
 SearchView searchView;
     ShimmerFrameLayout placehoderLayout;
-
+    ImageView actionIv;
     RecyclerView recyclerView;
     AdapterUser adapterUser;
     ArrayList<ModelUser> userList;
@@ -69,6 +70,7 @@ SearchView searchView;
         backIv = view.findViewById(R.id.backIv);
         searchView=view.findViewById(R.id.searchView);
         recyclerView = view.findViewById(R.id.recyclerViewUser);
+        actionIv = view.findViewById(R.id.actionIv);
         placehoderLayout=view.findViewById(R.id.placehoderLayout);
         reference = FirebaseDatabase.getInstance().getReference("Users");
 
@@ -79,6 +81,15 @@ SearchView searchView;
 
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        actionIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), SearchActivity.class));
+            }
+        });
+
+
+
         try {
             getAllUser();
             searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {

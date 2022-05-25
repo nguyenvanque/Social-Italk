@@ -9,14 +9,13 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_centerInParent="true"
-        android:src="@drawable/ic_app3"
         android:layout_width="100dp"
         android:layout_height="100dp"
-    />
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_app3" />
   <TextView
 
-      android:text="iTalk"
+      android:text="ChatApp "
       android:layout_below="@id/icon"
       android:textSize="18dp"
       android:textStyle="bold"

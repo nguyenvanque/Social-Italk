@@ -80,6 +80,7 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
         <de.hdodenhof.circleimageview.CircleImageView
+            android:visibility="gone"
             android:id="@+id/homeIv"
             android:layout_width="0dp"
             android:layout_height="48dp"
@@ -118,6 +119,7 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
         <LinearLayout
+            android:visibility="gone"
             android:id="@+id/notificationBtn"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"

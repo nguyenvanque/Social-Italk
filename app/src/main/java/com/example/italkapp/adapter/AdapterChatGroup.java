@@ -94,43 +94,43 @@ public class AdapterChatGroup extends RecyclerView.Adapter<AdapterChatGroup.View
         setUserAvatar(model, holder);
 
         // Click on message show time
-        holder.timeTv.setVisibility(View.INVISIBLE);
-        holder.messageLayout.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-            @Override
-            public void onClick(View v) {
-                showTime =!showTime;
-                if(getItemViewType(position)==1){
-                    if(showTime ==true){
-                        holder.messageTv.setBackgroundDrawable(context.getDrawable(R.drawable.background_row_chat_right));
-                        holder.timeTv.setVisibility(View.INVISIBLE);
-                        Animation animation= AnimationUtils.loadAnimation(context, R.anim.popdown);
-                        holder.timeTv.setAnimation(animation);
-                    }
-                    if(showTime ==false){
-                        holder.messageTv.setBackgroundDrawable(context.getDrawable(R.drawable.background_row_chat_right_bold));
-                        holder.timeTv.setVisibility(View.VISIBLE);
-                        Animation animation=AnimationUtils.loadAnimation(context, R.anim.popup);
-                        holder.timeTv.setAnimation(animation);
-                    }
-                }
-                if(getItemViewType(position)==0){
-                    if(showTime ==true){
-                        holder.messageTv.setBackgroundDrawable(context.getDrawable(R.drawable.background_row_chat_left));
-                        holder.timeTv.setVisibility(View.INVISIBLE);
-                        Animation animation=AnimationUtils.loadAnimation(context, R.anim.popdown);
-                        holder.timeTv.setAnimation(animation);
-                    }
-                    if(showTime ==false){
-                        holder.messageTv.setBackgroundDrawable(context.getDrawable(R.drawable.background_row_chat_left_bold));
-                        holder.timeTv.setVisibility(View.VISIBLE);
-                        Animation animation=AnimationUtils.loadAnimation(context, R.anim.popup);
-                        holder.timeTv.setAnimation(animation);
-                    }
-                }
-
-            }
-        });
+//        holder.timeTv.setVisibility(View.INVISIBLE);
+//        holder.messageLayout.setOnClickListener(new View.OnClickListener() {
+//            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+//            @Override
+//            public void onClick(View v) {
+//                showTime =!showTime;
+//                if(getItemViewType(position)==1){
+//                    if(showTime ==true){
+//                        holder.messageTv.setBackgroundDrawable(context.getDrawable(R.drawable.background_row_chat_right));
+//                        holder.timeTv.setVisibility(View.INVISIBLE);
+//                        Animation animation= AnimationUtils.loadAnimation(context, R.anim.popdown);
+//                        holder.timeTv.setAnimation(animation);
+//                    }
+//                    if(showTime ==false){
+//                        holder.messageTv.setBackgroundDrawable(context.getDrawable(R.drawable.background_row_chat_right_bold));
+//                        holder.timeTv.setVisibility(View.VISIBLE);
+//                        Animation animation=AnimationUtils.loadAnimation(context, R.anim.popup);
+//                        holder.timeTv.setAnimation(animation);
+//                    }
+//                }
+//                if(getItemViewType(position)==0){
+//                    if(showTime ==true){
+//                        holder.messageTv.setBackgroundDrawable(context.getDrawable(R.drawable.background_row_chat_left));
+//                        holder.timeTv.setVisibility(View.INVISIBLE);
+//                        Animation animation=AnimationUtils.loadAnimation(context, R.anim.popdown);
+//                        holder.timeTv.setAnimation(animation);
+//                    }
+//                    if(showTime ==false){
+//                        holder.messageTv.setBackgroundDrawable(context.getDrawable(R.drawable.background_row_chat_left_bold));
+//                        holder.timeTv.setVisibility(View.VISIBLE);
+//                        Animation animation=AnimationUtils.loadAnimation(context, R.anim.popup);
+//                        holder.timeTv.setAnimation(animation);
+//                    }
+//                }
+//
+//            }
+//        });
         holder.messageLayout.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {

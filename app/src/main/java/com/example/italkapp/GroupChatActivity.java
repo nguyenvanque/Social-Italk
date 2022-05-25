@@ -327,7 +327,7 @@ public class GroupChatActivity extends AppCompatActivity {
         attachBtn = findViewById(R.id.attachBtn);
         messageEt = findViewById(R.id.messageEt);
         microphoneBtn = findViewById(R.id.microphoneBtn);
-        sendBtn = findViewById(R.id.sendBtn);
+        sendBtn = findViewById(R.id.senBtn);
         infoGroupBtn = findViewById(R.id.infoGroupBtn);
         groupChatRcv = findViewById(R.id.chatGroup_Recyclerview);
         ChatConnectionTV = findViewById(R.id.ChatConnectionTV);

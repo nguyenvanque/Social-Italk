@@ -20,20 +20,38 @@
                 android:layout_width="45dp"
                 app:civ_circle_background_color="@null"
                 android:layout_height="45dp"/>
-            <TextView
-                android:id="@+id/messageTv"
-                android:padding="10dp"
-                android:text="His message"
-                android:layout_gravity="left"
-                android:layout_weight="1"
-                android:fontFamily="@font/mo_re"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginLeft="10dp"
-                android:visibility="visible"
-                android:background="@drawable/background_row_chat_left"
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/messageTv"
+                    android:padding="10dp"
+                    android:text="His message"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mo_re"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible"
+                    android:background="@drawable/background_row_chat_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/timeTv"
+                    android:textSize="10dp"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/mo_li"
+                    android:text="02/03/2020 05:30PM"
+                    android:textColor="@color/greynhat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
 
                <ImageView
                    android:id="@+id/messageIv"
@@ -46,17 +64,7 @@
                    android:src="@drawable/avatar_default"
                    android:layout_width="150dp"
                    android:layout_height="wrap_content"/>
-               <TextView
-                   android:id="@+id/timeTv"
-                   android:textSize="10dp"
-                   android:layout_marginRight="10dp"
-                   android:paddingLeft="10dp"
-                   android:layout_gravity="center_vertical"
-                   android:fontFamily="@font/mo_li"
-                   android:text="02/03/2020 05:30PM"
-                   android:textColor="@color/greynhat"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"/>
+
         </LinearLayout>
 
     </RelativeLayout>

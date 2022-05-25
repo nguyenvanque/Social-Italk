@@ -234,7 +234,6 @@ public class ChatOneActivity extends AppCompatActivity {
 
                 }
             });
-            sendBtn.setVisibility(View.INVISIBLE);
             messageEt.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -244,11 +243,9 @@ public class ChatOneActivity extends AppCompatActivity {
                 public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                     if (charSequence.length() > 0) {
                         sendBtn.setEnabled(true);
-                        sendBtn.setVisibility(View.VISIBLE);
                         checkTyping(hisUid);
                     } else {
                         sendBtn.setEnabled(false);
-                        sendBtn.setVisibility(View.INVISIBLE);
                         checkTyping("noOne");
                     }
                 }

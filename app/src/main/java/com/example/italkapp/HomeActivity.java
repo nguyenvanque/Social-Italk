@@ -100,6 +100,8 @@ public class HomeActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
 
+
+
         final DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Notifications");
         if(firebaseAuth.getUid()!=null ){
             reference.child(firebaseAuth.getUid()).child("NotificationCount").addValueEventListener(new ValueEventListener() {
@@ -131,8 +133,9 @@ public class HomeActivity extends AppCompatActivity {
             checkUserStatus();
         }
 
+        chatListIv.setImageResource(R.drawable.ic_chat_active);
 
-        HomeFragment fragment1 = new HomeFragment();
+        ChatListContainerFragment fragment1 = new ChatListContainerFragment();
         FragmentTransaction ft1 = getSupportFragmentManager().beginTransaction();
         ft1.replace(R.id.frame_container, fragment1, "");
         ft1.commit();

@@ -134,16 +134,20 @@
             android:background="@color/white"
             android:inputType="textCapSentences|textImeMultiLine"
             android:padding="15dp" />
+           <LinearLayout
+               android:layout_marginRight="15dp"
+               android:background="@drawable/background_icon_send"
+               android:gravity="center"
+               android:layout_width="45dp"
+               android:layout_height="45dp">
+               <ImageView
+                   android:id="@+id/senBtn"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/ic_send_blue"
+                   />
+           </LinearLayout>
 
-        <ImageView
-            android:id="@+id/senBtn"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:tint="@color/main"
-            android:layout_gravity="center_vertical"
-            android:background="@color/white"
-            android:src="@drawable/ic_send_blue"
-            />
     </LinearLayout>
 
 </LinearLayout>
